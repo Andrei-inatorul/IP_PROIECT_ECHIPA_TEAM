@@ -17,14 +17,12 @@ namespace Interface
         {
             InitializeComponent();
 
-            // Setăm dropdown-ul de branduri
             foreach (string brand in _validParts.Parts.Keys)
             {
                 comboBoxCategory.Items.Add(brand);
             }
 
-            // Conectăm butonul la logica TemplateActionForm
-            ConnectButton(buttonAddProduct); // asigură-te că există în Designer
+            ConnectButton(buttonAddProduct);
         }
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,26 +41,26 @@ namespace Interface
         {
             if (!comboBoxCategory.Items.Contains(comboBoxCategory.Text))
             {
-                MessageBox.Show("Please select a valid brand.");
+                MessageBox.Show("Te rugăm să selectezi un brand valid.");
                 return false;
             }
 
             if (!comboBoxProduct.Items.Contains(comboBoxProduct.Text))
             {
-                MessageBox.Show("Please select a valid part name.");
+                MessageBox.Show("Te rugăm să selectezi o piesă validă.");
                 return false;
             }
 
             int barcode;
             if (!int.TryParse(textBoxBarcode.Text, out barcode))
             {
-                MessageBox.Show("Barcode must be a valid number.");
+                MessageBox.Show("Codul de bare trebuie să fie un număr valid.");
                 return false;
             }
 
             if (numericUpDownPrice.Value <= 0 || numericUpDownStock.Value < 0)
             {
-                MessageBox.Show("Invalid values for price or stock.");
+                MessageBox.Show("Valori invalide pentru preț sau stoc.");
                 return false;
             }
 
@@ -80,7 +78,7 @@ namespace Interface
             AutoPart part = new AutoPart(barcode, name, brand, price, stock);
             _util.AddNewPart(part);
 
-            MessageBox.Show("Part successfully added.");
+            MessageBox.Show("Piesa a fost adăugată cu succes.");
             this.Close();
         }
     }

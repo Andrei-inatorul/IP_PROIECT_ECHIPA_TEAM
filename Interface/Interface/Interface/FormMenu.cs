@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Windows.Forms;
 using AutoPartsManagementDLL;
 using Items.DataBaseObjects;
-using System.Collections.Generic;
-using System.Globalization;
 
 namespace Interface
 {
@@ -18,12 +20,8 @@ namespace Interface
 
             InitializeDataGrid();
             labelAuthenticatedUser.Text = "Bine ai venit, " + _util.CurrentUser.Username.ToUpper(CultureInfo.CurrentCulture);
-
             InitializeButtons();
         }
-
-
-
 
         private void InitializeButtons()
         {
@@ -43,66 +41,6 @@ namespace Interface
             buttonPartList.Enabled = rights.Contains(Constants.ViewPartsRight);
         }
 
-        // Restul codului rămâne exact cum l-ai scris
-        private void logOut_Click(object sender, EventArgs e)
-        {
-            Form pagina = new FormLogIn();
-            this.Hide();
-            pagina.Show();
-        }
-
-        private void buttonAddUser_Click(object sender, EventArgs e)
-        {
-            Form pagina3 = new FormAddUser();
-            pagina3.Show();
-        }
-
-        private void buttonPassUpdate_Click(object sender, EventArgs e)
-        {
-            Form pagina5 = new FormUpdatePass();
-            pagina5.Show();
-        }
-
-        private void buttonUsersList_Click(object sender, EventArgs e)
-        {
-            DisplayUsers();
-        }
-
-        private void buttonDeleteUser_Click(object sender, EventArgs e)
-        {
-            Form pagina4 = new FormDeleteUser();
-            pagina4.Show();
-        }
-
-        private void buttonAddNewProduct_Click(object sender, EventArgs e)
-        {
-            Form pagina6 = new FormAddProduct();
-            pagina6.Show();
-        }
-
-        private void buttonAddStock_Click(object sender, EventArgs e)
-        {
-            Form pagina7 = new FormAddToStock();
-            pagina7.Show();
-        }
-
-        private void buttonSellProduct_Click(object sender, EventArgs e)
-        {
-            Form pagina8 = new FormSell();
-            pagina8.Show();
-        }
-
-        private void buttonProductList_Click(object sender, EventArgs e)
-        {
-            DisplayProducts();
-        }
-
-        private void buttonUpdateProductPrice_Click(object sender, EventArgs e)
-        {
-            Form pagina9 = new FormUpdatePrice();
-            pagina9.Show();
-        }
-
         private void InitializeDataGrid()
         {
             dataGridViewDBInfo.AllowUserToAddRows = false;
@@ -117,17 +55,19 @@ namespace Interface
             }
             else
             {
-                dataGridViewDBInfo.Columns.Add("Barcode", "Part ID");
-                dataGridViewDBInfo.Columns.Add("Name", "Part Name");
-                dataGridViewDBInfo.Columns.Add("Category", "Brand");
-                dataGridViewDBInfo.Columns.Add("Price", "Price");
-                dataGridViewDBInfo.Columns.Add("Stock", "Stock");
-                DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
-                imgColumn.Name = "Poza";
-                imgColumn.HeaderText = "Imagine";
-                imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-                imgColumn.Width = 100;
+                dataGridViewDBInfo.Columns.Add("Barcode", "ID Piesă");
+                dataGridViewDBInfo.Columns.Add("Name", "Nume");
+                dataGridViewDBInfo.Columns.Add("Category", "Marcă");
+                dataGridViewDBInfo.Columns.Add("Price", "Preț");
+                dataGridViewDBInfo.Columns.Add("Stock", "Stoc");
 
+                var imgColumn = new DataGridViewImageColumn
+                {
+                    Name = "Poza",
+                    HeaderText = "Imagine",
+                    ImageLayout = DataGridViewImageCellLayout.Zoom,
+                    Width = 100
+                };
                 dataGridViewDBInfo.Columns.Add(imgColumn);
             }
         }
@@ -136,10 +76,25 @@ namespace Interface
         {
             List<AutoPart> parts = _util.GetParts();
             dataGridViewDBInfo.Rows.Clear();
-            Image img = Image.FromFile(Path.Combine(Application.StartupPath, "images", "default.jpg"));
+
+            string imagesDir = Path.Combine(Application.StartupPath, "images");
+            string fallback = Path.Combine(imagesDir, "default.jpg");
+
             foreach (AutoPart p in parts)
             {
-                dataGridViewDBInfo.Rows.Add(p.Id.ToString(), p.Name, p.Brand, p.Price.ToString(), p.Stock.ToString(),img);
+                string imagePath = Path.Combine(imagesDir, $"{p.Id}.jpg");
+                Image img;
+
+                try
+                {
+                    img = File.Exists(imagePath) ? Image.FromFile(imagePath) : Image.FromFile(fallback);
+                }
+                catch
+                {
+                    img = null; // just in case both fail
+                }
+
+                dataGridViewDBInfo.Rows.Add(p.Id, p.Name, p.Brand, p.Price, p.Stock, img);
             }
         }
 
@@ -150,18 +105,70 @@ namespace Interface
 
             foreach (User u in users)
             {
-                dataGridViewDBInfo.Rows.Add(u.Id.ToString(), u.Username, u.Rights.ToString());
+                dataGridViewDBInfo.Rows.Add(u.Id, u.Username, u.Rights);
             }
         }
 
-        private void FormMenu_FormClosing(object sender, FormClosingEventArgs e)
+        private void logOut_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form login = new FormLogIn();
+            this.Hide();
+            login.Show();
+        }
+
+        private void buttonAddUser_Click(object sender, EventArgs e)
+        {
+            new FormAddUser().Show();
+        }
+
+        private void buttonPassUpdate_Click(object sender, EventArgs e)
+        {
+            new FormUpdatePass().Show();
+        }
+
+        private void buttonUsersList_Click(object sender, EventArgs e)
+        {
+            DisplayUsers();
+        }
+
+        private void buttonDeleteUser_Click(object sender, EventArgs e)
+        {
+            new FormDeleteUser().Show();
+        }
+
+        private void buttonAddNewProduct_Click(object sender, EventArgs e)
+        {
+            new FormAddProduct().Show();
+        }
+
+        private void buttonAddStock_Click(object sender, EventArgs e)
+        {
+            new FormAddToStock().Show();
+        }
+
+        private void buttonSellProduct_Click(object sender, EventArgs e)
+        {
+            new FormSell().Show();
+        }
+
+        private void buttonProductList_Click(object sender, EventArgs e)
+        {
+            DisplayProducts();
+        }
+
+        private void buttonUpdateProductPrice_Click(object sender, EventArgs e)
+        {
+            new FormUpdatePrice().Show();
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "HelpAutoParts.chm");
+        }
+
+        private void FormMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
