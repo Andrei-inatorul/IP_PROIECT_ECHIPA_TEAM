@@ -1,0 +1,10 @@
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\bin\Debug\User_interface.exe.config
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\bin\Debug\User_interface.exe
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\bin\Debug\User_interface.pdb
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.csproj.AssemblyReference.cache
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.Form1.resources
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.Properties.Resources.resources
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.csproj.GenerateResource.cache
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.csproj.CoreCompileInputs.cache
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.exe
+C:\Users\Soma\source\repos\Andrei-inatorul\IP_PROIECT_ECHIPA_TEAM\Proiect_Ip\User_interface\obj\Debug\User_interface.pdb
