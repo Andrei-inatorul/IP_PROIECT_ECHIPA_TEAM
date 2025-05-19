@@ -39,64 +39,84 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(330, 144);
+            label1.Font = new Font("Segoe UI", 22F);
+            label1.ForeColor = Color.FromArgb(153, 170, 181);
+            label1.Location = new Point(316, 131);
             label1.Name = "label1";
-            label1.Size = new Size(75, 15);
+            label1.Size = new Size(231, 50);
             label1.TabIndex = 0;
             label1.Text = "Autentificare";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(187, 194);
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.ForeColor = Color.FromArgb(153, 170, 181);
+            label2.Location = new Point(342, 227);
             label2.Name = "label2";
-            label2.Size = new Size(105, 15);
+            label2.Size = new Size(179, 28);
             label2.TabIndex = 1;
-            label2.Text = "Nume de utilizator";
+            label2.Text = "Nume de utilizator:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(187, 260);
+            label3.Font = new Font("Segoe UI", 12F);
+            label3.ForeColor = Color.FromArgb(153, 170, 181);
+            label3.Location = new Point(393, 290);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(70, 28);
             label3.TabIndex = 2;
-            label3.Text = "Parola";
+            label3.Text = "Parola:";
             // 
             // textBoxUser
             // 
-            textBoxUser.Location = new Point(377, 191);
+            textBoxUser.BackColor = Color.FromArgb(35, 39, 42);
+            textBoxUser.BorderStyle = BorderStyle.FixedSingle;
+            textBoxUser.ForeColor = Color.FromArgb(153, 170, 181);
+            textBoxUser.Location = new Point(291, 259);
+            textBoxUser.Margin = new Padding(3, 4, 3, 4);
             textBoxUser.Name = "textBoxUser";
-            textBoxUser.Size = new Size(239, 23);
+            textBoxUser.PlaceholderText = "Nume de utilizator";
+            textBoxUser.Size = new Size(273, 27);
             textBoxUser.TabIndex = 3;
             // 
             // textBoxPass
             // 
-            textBoxPass.Location = new Point(377, 257);
+            textBoxPass.BackColor = Color.FromArgb(35, 39, 42);
+            textBoxPass.BorderStyle = BorderStyle.FixedSingle;
+            textBoxPass.ForeColor = Color.FromArgb(153, 170, 181);
+            textBoxPass.Location = new Point(291, 322);
+            textBoxPass.Margin = new Padding(3, 4, 3, 4);
             textBoxPass.Name = "textBoxPass";
-            textBoxPass.Size = new Size(239, 23);
+            textBoxPass.PlaceholderText = "Parola";
+            textBoxPass.Size = new Size(273, 27);
             textBoxPass.TabIndex = 4;
             // 
             // login
             // 
-            login.Location = new Point(330, 310);
+            login.ForeColor = Color.FromArgb(40, 43, 48);
+            login.Location = new Point(377, 372);
+            login.Margin = new Padding(3, 4, 3, 4);
             login.Name = "login";
-            login.Size = new Size(75, 23);
+            login.Size = new Size(86, 31);
             login.TabIndex = 5;
-            login.Text = "logare";
+            login.Text = "Logare";
             login.UseVisualStyleBackColor = true;
             // 
             // FormLogIn
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(757, 404);
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(865, 539);
             Controls.Add(login);
             Controls.Add(textBoxPass);
             Controls.Add(textBoxUser);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormLogIn";
             Text = "Autentificare";
             ResumeLayout(false);

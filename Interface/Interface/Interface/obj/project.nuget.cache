@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LwZ6q+7WK68=",
+  "dgSpecHash": "IB2d/U29qLw=",
   "success": true,
-  "projectFilePath": "D:\\an3\\SEM2\\IP\\PROIECT\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\Interface.csproj",
+  "projectFilePath": "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\Interface.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Pitic\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
-    "C:\\Users\\Pitic\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+    "C:\\Users\\Soma\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\Soma\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
   ],
   "logs": []
 }

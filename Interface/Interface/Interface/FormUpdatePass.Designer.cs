@@ -29,107 +29,112 @@ namespace Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxUser = new System.Windows.Forms.TextBox();
-            this.textBoxOldPass = new System.Windows.Forms.TextBox();
-            this.textBoxNewPass = new System.Windows.Forms.TextBox();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.labelOldPass = new System.Windows.Forms.Label();
-            this.labelNewPass = new System.Windows.Forms.Label();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.groupBoxUpdatePass = new System.Windows.Forms.GroupBox();
-            this.groupBoxUpdatePass.SuspendLayout();
-            this.SuspendLayout();
+            textBoxUser = new TextBox();
+            textBoxOldPass = new TextBox();
+            textBoxNewPass = new TextBox();
+            labelUsername = new Label();
+            labelOldPass = new Label();
+            labelNewPass = new Label();
+            buttonUpdate = new Button();
+            groupBoxUpdatePass = new GroupBox();
+            groupBoxUpdatePass.SuspendLayout();
+            SuspendLayout();
             // 
             // textBoxUser
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(207, 98);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(255, 22);
-            this.textBoxUser.TabIndex = 0;
+            textBoxUser.Location = new Point(207, 122);
+            textBoxUser.Margin = new Padding(3, 4, 3, 4);
+            textBoxUser.Name = "textBoxUser";
+            textBoxUser.Size = new Size(255, 27);
+            textBoxUser.TabIndex = 0;
             // 
             // textBoxOldPass
             // 
-            this.textBoxOldPass.Location = new System.Drawing.Point(207, 138);
-            this.textBoxOldPass.Name = "textBoxOldPass";
-            this.textBoxOldPass.Size = new System.Drawing.Size(255, 22);
-            this.textBoxOldPass.TabIndex = 1;
+            textBoxOldPass.Location = new Point(207, 172);
+            textBoxOldPass.Margin = new Padding(3, 4, 3, 4);
+            textBoxOldPass.Name = "textBoxOldPass";
+            textBoxOldPass.Size = new Size(255, 27);
+            textBoxOldPass.TabIndex = 1;
             // 
             // textBoxNewPass
             // 
-            this.textBoxNewPass.Location = new System.Drawing.Point(207, 182);
-            this.textBoxNewPass.Name = "textBoxNewPass";
-            this.textBoxNewPass.Size = new System.Drawing.Size(255, 22);
-            this.textBoxNewPass.TabIndex = 2;
+            textBoxNewPass.Location = new Point(207, 228);
+            textBoxNewPass.Margin = new Padding(3, 4, 3, 4);
+            textBoxNewPass.Name = "textBoxNewPass";
+            textBoxNewPass.Size = new Size(255, 27);
+            textBoxNewPass.TabIndex = 2;
             // 
             // labelUsername
             // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(60, 97);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(138, 22);
-            this.labelUsername.TabIndex = 3;
-            this.labelUsername.Text = "Nume utilizator:";
+            labelUsername.AutoSize = true;
+            labelUsername.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelUsername.Location = new Point(60, 121);
+            labelUsername.Name = "labelUsername";
+            labelUsername.Size = new Size(138, 22);
+            labelUsername.TabIndex = 3;
+            labelUsername.Text = "Nume utilizator:";
             // 
             // labelOldPass
             // 
-            this.labelOldPass.AutoSize = true;
-            this.labelOldPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOldPass.Location = new System.Drawing.Point(64, 138);
-            this.labelOldPass.Name = "labelOldPass";
-            this.labelOldPass.Size = new System.Drawing.Size(119, 22);
-            this.labelOldPass.TabIndex = 4;
-            this.labelOldPass.Text = "Parola veche:";
+            labelOldPass.AutoSize = true;
+            labelOldPass.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelOldPass.Location = new Point(64, 172);
+            labelOldPass.Name = "labelOldPass";
+            labelOldPass.Size = new Size(119, 22);
+            labelOldPass.TabIndex = 4;
+            labelOldPass.Text = "Parola veche:";
             // 
             // labelNewPass
             // 
-            this.labelNewPass.AutoSize = true;
-            this.labelNewPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewPass.Location = new System.Drawing.Point(73, 181);
-            this.labelNewPass.Name = "labelNewPass";
-            this.labelNewPass.Size = new System.Drawing.Size(110, 22);
-            this.labelNewPass.TabIndex = 5;
-            this.labelNewPass.Text = "Parola nouă:";
+            labelNewPass.AutoSize = true;
+            labelNewPass.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNewPass.Location = new Point(73, 226);
+            labelNewPass.Name = "labelNewPass";
+            labelNewPass.Size = new Size(110, 22);
+            labelNewPass.TabIndex = 5;
+            labelNewPass.Text = "Parola nouă:";
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(476, 355);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(101, 29);
-            this.buttonUpdate.TabIndex = 6;
-            this.buttonUpdate.Text = "Actualizează!";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            //this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            buttonUpdate.Location = new Point(476, 444);
+            buttonUpdate.Margin = new Padding(3, 4, 3, 4);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(101, 36);
+            buttonUpdate.TabIndex = 6;
+            buttonUpdate.Text = "Actualizează!";
+            buttonUpdate.UseVisualStyleBackColor = true;
             // 
             // groupBoxUpdatePass
             // 
-            this.groupBoxUpdatePass.Controls.Add(this.labelUsername);
-            this.groupBoxUpdatePass.Controls.Add(this.textBoxUser);
-            this.groupBoxUpdatePass.Controls.Add(this.labelNewPass);
-            this.groupBoxUpdatePass.Controls.Add(this.textBoxOldPass);
-            this.groupBoxUpdatePass.Controls.Add(this.labelOldPass);
-            this.groupBoxUpdatePass.Controls.Add(this.textBoxNewPass);
-            this.groupBoxUpdatePass.Location = new System.Drawing.Point(29, 28);
-            this.groupBoxUpdatePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxUpdatePass.Name = "groupBoxUpdatePass";
-            this.groupBoxUpdatePass.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxUpdatePass.Size = new System.Drawing.Size(548, 306);
-            this.groupBoxUpdatePass.TabIndex = 7;
-            this.groupBoxUpdatePass.TabStop = false;
-            this.groupBoxUpdatePass.Text = "ACTUALIZEAZĂ PAROLA";
+            groupBoxUpdatePass.Controls.Add(labelUsername);
+            groupBoxUpdatePass.Controls.Add(textBoxUser);
+            groupBoxUpdatePass.Controls.Add(labelNewPass);
+            groupBoxUpdatePass.Controls.Add(textBoxOldPass);
+            groupBoxUpdatePass.Controls.Add(labelOldPass);
+            groupBoxUpdatePass.Controls.Add(textBoxNewPass);
+            groupBoxUpdatePass.Location = new Point(29, 35);
+            groupBoxUpdatePass.Margin = new Padding(3, 2, 3, 2);
+            groupBoxUpdatePass.Name = "groupBoxUpdatePass";
+            groupBoxUpdatePass.Padding = new Padding(3, 2, 3, 2);
+            groupBoxUpdatePass.Size = new Size(548, 382);
+            groupBoxUpdatePass.TabIndex = 7;
+            groupBoxUpdatePass.TabStop = false;
+            groupBoxUpdatePass.Text = "ACTUALIZEAZĂ PAROLA";
             // 
             // FormUpdatePass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 399);
-            this.Controls.Add(this.groupBoxUpdatePass);
-            this.Controls.Add(this.buttonUpdate);
-            this.Name = "FormUpdatePass";
-            this.Text = "Actualizează parola:";
-            this.groupBoxUpdatePass.ResumeLayout(false);
-            this.groupBoxUpdatePass.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(620, 499);
+            Controls.Add(groupBoxUpdatePass);
+            Controls.Add(buttonUpdate);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormUpdatePass";
+            Text = "Actualizează parola:";
+            groupBoxUpdatePass.ResumeLayout(false);
+            groupBoxUpdatePass.PerformLayout();
+            ResumeLayout(false);
 
         }
 

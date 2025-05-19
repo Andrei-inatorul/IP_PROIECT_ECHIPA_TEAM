@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj": {}
+    "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj": {}
   },
   "projects": {
-    "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj": {
+    "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj",
+        "projectUniqueName": "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj",
         "projectName": "AutoPartsManagementDLL",
-        "projectPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj",
-        "packagesPath": "C:\\Users\\Pitic\\.nuget\\packages\\",
-        "outputPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\obj\\",
+        "projectPath": "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj",
+        "packagesPath": "C:\\Users\\Soma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Soma\\source\\repos\\Andrei-inatorul\\IP_PROIECT_ECHIPA_TEAM\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Soma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,93 +29,93 @@ namespace Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxUpdatePrice = new System.Windows.Forms.GroupBox();
-            this.labelBarcode = new System.Windows.Forms.Label();
-            this.labelNewPrice = new System.Windows.Forms.Label();
-            this.numericUpDownNewPrice = new System.Windows.Forms.NumericUpDown();
-            this.textBoxBarcode = new System.Windows.Forms.TextBox();
-            this.buttonUpdatePrice = new System.Windows.Forms.Button();
-            this.groupBoxUpdatePrice.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNewPrice)).BeginInit();
-            this.SuspendLayout();
+            groupBoxUpdatePrice = new GroupBox();
+            labelBarcode = new Label();
+            labelNewPrice = new Label();
+            numericUpDownNewPrice = new NumericUpDown();
+            textBoxBarcode = new TextBox();
+            buttonUpdatePrice = new Button();
+            groupBoxUpdatePrice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownNewPrice).BeginInit();
+            SuspendLayout();
             // 
             // groupBoxUpdatePrice
             // 
-            this.groupBoxUpdatePrice.Controls.Add(this.labelBarcode);
-            this.groupBoxUpdatePrice.Controls.Add(this.labelNewPrice);
-            this.groupBoxUpdatePrice.Controls.Add(this.numericUpDownNewPrice);
-            this.groupBoxUpdatePrice.Controls.Add(this.textBoxBarcode);
-            this.groupBoxUpdatePrice.Location = new System.Drawing.Point(57, 10);
-            this.groupBoxUpdatePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxUpdatePrice.Name = "groupBoxUpdatePrice";
-            this.groupBoxUpdatePrice.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxUpdatePrice.Size = new System.Drawing.Size(612, 293);
-            this.groupBoxUpdatePrice.TabIndex = 4;
-            this.groupBoxUpdatePrice.TabStop = false;
-            this.groupBoxUpdatePrice.Text = "ACTUALIZEZĂ PREȚUL PIESEI";
+            groupBoxUpdatePrice.Controls.Add(labelBarcode);
+            groupBoxUpdatePrice.Controls.Add(labelNewPrice);
+            groupBoxUpdatePrice.Controls.Add(numericUpDownNewPrice);
+            groupBoxUpdatePrice.Controls.Add(textBoxBarcode);
+            groupBoxUpdatePrice.Location = new Point(57, 12);
+            groupBoxUpdatePrice.Margin = new Padding(3, 2, 3, 2);
+            groupBoxUpdatePrice.Name = "groupBoxUpdatePrice";
+            groupBoxUpdatePrice.Padding = new Padding(3, 2, 3, 2);
+            groupBoxUpdatePrice.Size = new Size(612, 366);
+            groupBoxUpdatePrice.TabIndex = 4;
+            groupBoxUpdatePrice.TabStop = false;
+            groupBoxUpdatePrice.Text = "ACTUALIZEZĂ PREȚUL PIESEI";
             // 
             // labelBarcode
             // 
-            this.labelBarcode.AutoSize = true;
-            this.labelBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBarcode.Location = new System.Drawing.Point(107, 104);
-            this.labelBarcode.Name = "labelBarcode";
-            this.labelBarcode.Size = new System.Drawing.Size(118, 22);
-            this.labelBarcode.TabIndex = 7;
-            this.labelBarcode.Text = "Cod de bare :";
+            labelBarcode.AutoSize = true;
+            labelBarcode.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelBarcode.Location = new Point(107, 130);
+            labelBarcode.Name = "labelBarcode";
+            labelBarcode.Size = new Size(118, 22);
+            labelBarcode.TabIndex = 7;
+            labelBarcode.Text = "Cod de bare :";
             // 
             // labelNewPrice
             // 
-            this.labelNewPrice.AutoSize = true;
-            this.labelNewPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewPrice.Location = new System.Drawing.Point(122, 167);
-            this.labelNewPrice.Name = "labelNewPrice";
-            this.labelNewPrice.Size = new System.Drawing.Size(87, 22);
-            this.labelNewPrice.TabIndex = 6;
-            this.labelNewPrice.Text = "Preț nou :";
+            labelNewPrice.AutoSize = true;
+            labelNewPrice.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNewPrice.Location = new Point(122, 209);
+            labelNewPrice.Name = "labelNewPrice";
+            labelNewPrice.Size = new Size(87, 22);
+            labelNewPrice.TabIndex = 6;
+            labelNewPrice.Text = "Preț nou :";
             // 
             // numericUpDownNewPrice
             // 
-            this.numericUpDownNewPrice.DecimalPlaces = 2;
-            this.numericUpDownNewPrice.Location = new System.Drawing.Point(251, 169);
-            this.numericUpDownNewPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDownNewPrice.Name = "numericUpDownNewPrice";
-            this.numericUpDownNewPrice.Size = new System.Drawing.Size(254, 22);
-            this.numericUpDownNewPrice.TabIndex = 5;
+            numericUpDownNewPrice.DecimalPlaces = 2;
+            numericUpDownNewPrice.Location = new Point(251, 211);
+            numericUpDownNewPrice.Margin = new Padding(3, 2, 3, 2);
+            numericUpDownNewPrice.Name = "numericUpDownNewPrice";
+            numericUpDownNewPrice.Size = new Size(254, 27);
+            numericUpDownNewPrice.TabIndex = 5;
             // 
             // textBoxBarcode
             // 
-            this.textBoxBarcode.Location = new System.Drawing.Point(251, 103);
-            this.textBoxBarcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxBarcode.Name = "textBoxBarcode";
-            this.textBoxBarcode.Size = new System.Drawing.Size(255, 22);
-            this.textBoxBarcode.TabIndex = 4;
+            textBoxBarcode.Location = new Point(251, 129);
+            textBoxBarcode.Margin = new Padding(3, 2, 3, 2);
+            textBoxBarcode.Name = "textBoxBarcode";
+            textBoxBarcode.Size = new Size(255, 27);
+            textBoxBarcode.TabIndex = 4;
             // 
             // buttonUpdatePrice
             // 
-            this.buttonUpdatePrice.Location = new System.Drawing.Point(562, 319);
-            this.buttonUpdatePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonUpdatePrice.Name = "buttonUpdatePrice";
-            this.buttonUpdatePrice.Size = new System.Drawing.Size(106, 31);
-            this.buttonUpdatePrice.TabIndex = 5;
-            this.buttonUpdatePrice.Text = "Actualizează";
-            this.buttonUpdatePrice.UseVisualStyleBackColor = true;
-            //this.buttonUpdatePrice.Click += new System.EventHandler(this.buttonUpdatePrice_Click);
+            buttonUpdatePrice.Location = new Point(562, 399);
+            buttonUpdatePrice.Margin = new Padding(3, 2, 3, 2);
+            buttonUpdatePrice.Name = "buttonUpdatePrice";
+            buttonUpdatePrice.Size = new Size(106, 39);
+            buttonUpdatePrice.TabIndex = 5;
+            buttonUpdatePrice.Text = "Actualizează";
+            buttonUpdatePrice.UseVisualStyleBackColor = true;
             // 
             // FormUpdatePrice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.buttonUpdatePrice);
-            this.Controls.Add(this.groupBoxUpdatePrice);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FormUpdatePrice";
-            this.Text = "Actualizează prețul";
-            this.groupBoxUpdatePrice.ResumeLayout(false);
-            this.groupBoxUpdatePrice.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNewPrice)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(711, 450);
+            Controls.Add(buttonUpdatePrice);
+            Controls.Add(groupBoxUpdatePrice);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FormUpdatePrice";
+            Text = "Actualizează prețul";
+            groupBoxUpdatePrice.ResumeLayout(false);
+            groupBoxUpdatePrice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownNewPrice).EndInit();
+            ResumeLayout(false);
 
         }
 

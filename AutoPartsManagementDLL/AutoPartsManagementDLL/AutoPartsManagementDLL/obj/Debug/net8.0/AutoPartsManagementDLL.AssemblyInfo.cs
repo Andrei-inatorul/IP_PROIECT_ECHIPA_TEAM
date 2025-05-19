@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoPartsManagementDLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e3fa6e8bfe85c40f96f68fbed9938802946af02")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoPartsManagementDLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoPartsManagementDLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

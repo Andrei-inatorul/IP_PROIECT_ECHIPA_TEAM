@@ -21,6 +21,19 @@ namespace Interface
             InitializeDataGrid();
             labelAuthenticatedUser.Text = "Bine ai venit, " + _util.CurrentUser.Username.ToUpper(CultureInfo.CurrentCulture);
             InitializeButtons();
+            dataGridViewDBInfo.BackgroundColor = Color.FromArgb(44, 47, 51);
+            dataGridViewDBInfo.EnableHeadersVisualStyles = false;
+            dataGridViewDBInfo.DefaultCellStyle.BackColor = Color.FromArgb(44, 47, 51);
+            dataGridViewDBInfo.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(35, 39, 42);
+            dataGridViewDBInfo.DefaultCellStyle.ForeColor = Color.FromArgb(153, 170, 180);
+            dataGridViewDBInfo.DefaultCellStyle.SelectionBackColor = Color.FromArgb(28, 28, 28);
+            dataGridViewDBInfo.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(28, 28, 28);
+            dataGridViewDBInfo.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(153, 170, 180);
+            dataGridViewDBInfo.RowHeadersDefaultCellStyle.ForeColor = Color.FromArgb(153, 170, 180);
+            dataGridViewDBInfo.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(28, 28, 28);
+            dataGridViewDBInfo.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewDBInfo.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
         }
 
         private void InitializeButtons()
@@ -28,17 +41,42 @@ namespace Interface
             Permissions permissions = new Permissions();
             List<int> rights = permissions.RightsList(_util.CurrentUser.Rights);
 
-            buttonAddUser.Enabled = rights.Contains(Constants.ModifyUsersDBRight);
-            buttonDeleteUser.Enabled = rights.Contains(Constants.ModifyUsersDBRight);
-            buttonPassUpdate.Enabled = rights.Contains(Constants.ModifyUsersDBRight);
-            buttonUsersList.Enabled = rights.Contains(Constants.ViewUsersRight);
+            if(!rights.Contains(Constants.ModifyUsersDBRight))
+            {
+                buttonAddUser.Hide();
+                buttonDeleteUser.Hide();
+                buttonPassUpdate.Hide();
+            }
 
-            buttonAddNewPart.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
-            buttonAddStock.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
-            buttonUpdateProductPrice.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
+            if(!rights.Contains(Constants.ModifyPartsDBRight))
+            {
+                buttonAddNewPart.Hide();
+                buttonAddStock.Hide();
+                buttonUpdateProductPrice.Hide();
+            }
 
-            buttonSellPart.Enabled = rights.Contains(Constants.SellRight);
-            buttonPartList.Enabled = rights.Contains(Constants.ViewPartsRight);
+            if(!rights.Contains(Constants.ViewUsersRight))
+            {
+                buttonUsersList.Hide();
+            }
+
+            //buttonAddNewPart.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
+            //buttonAddStock.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
+            //buttonUpdateProductPrice.Enabled = rights.Contains(Constants.ModifyPartsDBRight);
+
+            if(!rights.Contains(Constants.SellRight))
+            {
+                buttonSellPart.Hide();
+            }
+
+            if(!rights.Contains(Constants.ViewPartsRight))
+            {
+                buttonPartList.Hide();
+            }
+            else
+            {
+                DisplayProducts();
+            }
         }
 
         private void InitializeDataGrid()

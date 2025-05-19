@@ -29,94 +29,93 @@ namespace Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonSell = new System.Windows.Forms.Button();
-            this.labelQuantity = new System.Windows.Forms.Label();
-            this.labelBarcode = new System.Windows.Forms.Label();
-            this.textBoxBarcode = new System.Windows.Forms.TextBox();
-            this.numericUpDownQuantity = new System.Windows.Forms.NumericUpDown();
-            this.groupBoxSell = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).BeginInit();
-            this.groupBoxSell.SuspendLayout();
-            this.SuspendLayout();
+            buttonSell = new Button();
+            labelQuantity = new Label();
+            labelBarcode = new Label();
+            textBoxBarcode = new TextBox();
+            numericUpDownQuantity = new NumericUpDown();
+            groupBoxSell = new GroupBox();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownQuantity).BeginInit();
+            groupBoxSell.SuspendLayout();
+            SuspendLayout();
             // 
             // buttonSell
             // 
-            this.buttonSell.Location = new System.Drawing.Point(592, 342);
-            this.buttonSell.Name = "buttonSell";
-            this.buttonSell.Size = new System.Drawing.Size(75, 23);
-            this.buttonSell.TabIndex = 16;
-            this.buttonSell.Text = "Vinde";
-            this.buttonSell.UseVisualStyleBackColor = true;
-            //this.buttonSell.Click += new System.EventHandler(this.buttonSell_Click);
+            buttonSell.Location = new Point(592, 428);
+            buttonSell.Margin = new Padding(3, 4, 3, 4);
+            buttonSell.Name = "buttonSell";
+            buttonSell.Size = new Size(75, 29);
+            buttonSell.TabIndex = 16;
+            buttonSell.Text = "Vinde";
+            buttonSell.UseVisualStyleBackColor = true;
             // 
             // labelQuantity
             // 
-            this.labelQuantity.AutoSize = true;
-            this.labelQuantity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuantity.Location = new System.Drawing.Point(140, 158);
-            this.labelQuantity.Name = "labelQuantity";
-            this.labelQuantity.Size = new System.Drawing.Size(86, 22);
-            this.labelQuantity.TabIndex = 15;
-            this.labelQuantity.Text = "Cantitate:";
+            labelQuantity.AutoSize = true;
+            labelQuantity.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelQuantity.Location = new Point(140, 198);
+            labelQuantity.Name = "labelQuantity";
+            labelQuantity.Size = new Size(86, 22);
+            labelQuantity.TabIndex = 15;
+            labelQuantity.Text = "Cantitate:";
             // 
             // labelBarcode
             // 
-            this.labelBarcode.AutoSize = true;
-            this.labelBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBarcode.Location = new System.Drawing.Point(114, 99);
-            this.labelBarcode.Name = "labelBarcode";
-            this.labelBarcode.Size = new System.Drawing.Size(113, 22);
-            this.labelBarcode.TabIndex = 14;
-            this.labelBarcode.Text = "Cod de bare:";
+            labelBarcode.AutoSize = true;
+            labelBarcode.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelBarcode.Location = new Point(114, 124);
+            labelBarcode.Name = "labelBarcode";
+            labelBarcode.Size = new Size(113, 22);
+            labelBarcode.TabIndex = 14;
+            labelBarcode.Text = "Cod de bare:";
             // 
             // textBoxBarcode
             // 
-            this.textBoxBarcode.Location = new System.Drawing.Point(242, 99);
-            this.textBoxBarcode.Name = "textBoxBarcode";
-            this.textBoxBarcode.Size = new System.Drawing.Size(249, 22);
-            this.textBoxBarcode.TabIndex = 12;
+            textBoxBarcode.Location = new Point(242, 124);
+            textBoxBarcode.Margin = new Padding(3, 4, 3, 4);
+            textBoxBarcode.Name = "textBoxBarcode";
+            textBoxBarcode.Size = new Size(249, 27);
+            textBoxBarcode.TabIndex = 12;
             // 
             // numericUpDownQuantity
             // 
-            this.numericUpDownQuantity.Location = new System.Drawing.Point(242, 159);
-            this.numericUpDownQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDownQuantity.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.numericUpDownQuantity.Name = "numericUpDownQuantity";
-            this.numericUpDownQuantity.Size = new System.Drawing.Size(249, 22);
-            this.numericUpDownQuantity.TabIndex = 17;
+            numericUpDownQuantity.Location = new Point(242, 199);
+            numericUpDownQuantity.Margin = new Padding(3, 2, 3, 2);
+            numericUpDownQuantity.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            numericUpDownQuantity.Name = "numericUpDownQuantity";
+            numericUpDownQuantity.Size = new Size(249, 27);
+            numericUpDownQuantity.TabIndex = 17;
             // 
             // groupBoxSell
             // 
-            this.groupBoxSell.Controls.Add(this.labelBarcode);
-            this.groupBoxSell.Controls.Add(this.numericUpDownQuantity);
-            this.groupBoxSell.Controls.Add(this.textBoxBarcode);
-            this.groupBoxSell.Controls.Add(this.labelQuantity);
-            this.groupBoxSell.Location = new System.Drawing.Point(30, 35);
-            this.groupBoxSell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxSell.Name = "groupBoxSell";
-            this.groupBoxSell.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxSell.Size = new System.Drawing.Size(636, 286);
-            this.groupBoxSell.TabIndex = 18;
-            this.groupBoxSell.TabStop = false;
-            this.groupBoxSell.Text = "VINDE PIESĂ";
+            groupBoxSell.Controls.Add(labelBarcode);
+            groupBoxSell.Controls.Add(numericUpDownQuantity);
+            groupBoxSell.Controls.Add(textBoxBarcode);
+            groupBoxSell.Controls.Add(labelQuantity);
+            groupBoxSell.Location = new Point(30, 44);
+            groupBoxSell.Margin = new Padding(3, 2, 3, 2);
+            groupBoxSell.Name = "groupBoxSell";
+            groupBoxSell.Padding = new Padding(3, 2, 3, 2);
+            groupBoxSell.Size = new Size(636, 358);
+            groupBoxSell.TabIndex = 18;
+            groupBoxSell.TabStop = false;
+            groupBoxSell.Text = "VINDE PIESĂ";
             // 
             // FormSell
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 376);
-            this.Controls.Add(this.groupBoxSell);
-            this.Controls.Add(this.buttonSell);
-            this.Name = "FormSell";
-            this.Text = "Vinde piesă:";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).EndInit();
-            this.groupBoxSell.ResumeLayout(false);
-            this.groupBoxSell.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(712, 470);
+            Controls.Add(groupBoxSell);
+            Controls.Add(buttonSell);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormSell";
+            Text = "Vinde piesă:";
+            ((System.ComponentModel.ISupportInitialize)numericUpDownQuantity).EndInit();
+            groupBoxSell.ResumeLayout(false);
+            groupBoxSell.PerformLayout();
+            ResumeLayout(false);
 
         }
 

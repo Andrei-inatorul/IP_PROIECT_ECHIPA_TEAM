@@ -29,65 +29,68 @@ namespace Interface
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.groupBoxDeleteUser = new System.Windows.Forms.GroupBox();
-            this.labelNewUserName = new System.Windows.Forms.Label();
-            this.textBoxDeletedUsername = new System.Windows.Forms.TextBox();
-            this.groupBoxDeleteUser.SuspendLayout();
-            this.SuspendLayout();
+            buttonDelete = new Button();
+            groupBoxDeleteUser = new GroupBox();
+            labelNewUserName = new Label();
+            textBoxDeletedUsername = new TextBox();
+            groupBoxDeleteUser.SuspendLayout();
+            SuspendLayout();
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(542, 258);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(80, 26);
-            this.buttonDelete.TabIndex = 5;
-            this.buttonDelete.Text = "Șterge";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            //this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            buttonDelete.Location = new Point(542, 322);
+            buttonDelete.Margin = new Padding(3, 4, 3, 4);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(80, 32);
+            buttonDelete.TabIndex = 5;
+            buttonDelete.Text = "Șterge";
+            buttonDelete.UseVisualStyleBackColor = true;
             // 
             // groupBoxDeleteUser
             // 
-            this.groupBoxDeleteUser.Controls.Add(this.labelNewUserName);
-            this.groupBoxDeleteUser.Controls.Add(this.textBoxDeletedUsername);
-            this.groupBoxDeleteUser.Location = new System.Drawing.Point(31, 26);
-            this.groupBoxDeleteUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxDeleteUser.Name = "groupBoxDeleteUser";
-            this.groupBoxDeleteUser.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxDeleteUser.Size = new System.Drawing.Size(582, 214);
-            this.groupBoxDeleteUser.TabIndex = 6;
-            this.groupBoxDeleteUser.TabStop = false;
-            this.groupBoxDeleteUser.Text = "ȘTERGE UTILIZATOR";
+            groupBoxDeleteUser.Controls.Add(labelNewUserName);
+            groupBoxDeleteUser.Controls.Add(textBoxDeletedUsername);
+            groupBoxDeleteUser.Location = new Point(31, 32);
+            groupBoxDeleteUser.Margin = new Padding(3, 2, 3, 2);
+            groupBoxDeleteUser.Name = "groupBoxDeleteUser";
+            groupBoxDeleteUser.Padding = new Padding(3, 2, 3, 2);
+            groupBoxDeleteUser.Size = new Size(582, 268);
+            groupBoxDeleteUser.TabIndex = 6;
+            groupBoxDeleteUser.TabStop = false;
+            groupBoxDeleteUser.Text = "ȘTERGE UTILIZATOR";
             // 
             // labelNewUserName
             // 
-            this.labelNewUserName.AutoSize = true;
-            this.labelNewUserName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewUserName.Location = new System.Drawing.Point(58, 97);
-            this.labelNewUserName.Name = "labelNewUserName";
-            this.labelNewUserName.Size = new System.Drawing.Size(162, 22);
-            this.labelNewUserName.TabIndex = 6;
-            this.labelNewUserName.Text = "Nume de utilizator:";
+            labelNewUserName.AutoSize = true;
+            labelNewUserName.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelNewUserName.Location = new Point(58, 121);
+            labelNewUserName.Name = "labelNewUserName";
+            labelNewUserName.Size = new Size(162, 22);
+            labelNewUserName.TabIndex = 6;
+            labelNewUserName.Text = "Nume de utilizator:";
             // 
             // textBoxDeletedUsername
             // 
-            this.textBoxDeletedUsername.Location = new System.Drawing.Point(226, 97);
-            this.textBoxDeletedUsername.Name = "textBoxDeletedUsername";
-            this.textBoxDeletedUsername.Size = new System.Drawing.Size(234, 22);
-            this.textBoxDeletedUsername.TabIndex = 5;
+            textBoxDeletedUsername.Location = new Point(226, 121);
+            textBoxDeletedUsername.Margin = new Padding(3, 4, 3, 4);
+            textBoxDeletedUsername.Name = "textBoxDeletedUsername";
+            textBoxDeletedUsername.Size = new Size(234, 27);
+            textBoxDeletedUsername.TabIndex = 5;
             // 
             // FormDeleteUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 294);
-            this.Controls.Add(this.groupBoxDeleteUser);
-            this.Controls.Add(this.buttonDelete);
-            this.Name = "FormDeleteUser";
-            this.Text = "Șterge utilizator:";
-            this.groupBoxDeleteUser.ResumeLayout(false);
-            this.groupBoxDeleteUser.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(650, 368);
+            Controls.Add(groupBoxDeleteUser);
+            Controls.Add(buttonDelete);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormDeleteUser";
+            Text = "Șterge utilizator:";
+            groupBoxDeleteUser.ResumeLayout(false);
+            groupBoxDeleteUser.PerformLayout();
+            ResumeLayout(false);
 
         }
 

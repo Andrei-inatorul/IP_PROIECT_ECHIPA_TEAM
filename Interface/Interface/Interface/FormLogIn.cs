@@ -14,8 +14,8 @@ namespace Interface
             _util = ProxyActionManager.GetInstance();
 
             this.AcceptButton = login;
+            textBoxPass.PasswordChar = '*';
 
-            
             ConnectButton(login); 
         }
 

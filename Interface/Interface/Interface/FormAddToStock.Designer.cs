@@ -41,9 +41,10 @@ namespace Interface
             // 
             // buttonAddToStock
             // 
-            buttonAddToStock.Location = new Point(595, 388);
+            buttonAddToStock.Location = new Point(680, 517);
+            buttonAddToStock.Margin = new Padding(3, 4, 3, 4);
             buttonAddToStock.Name = "buttonAddToStock";
-            buttonAddToStock.Size = new Size(69, 23);
+            buttonAddToStock.Size = new Size(79, 31);
             buttonAddToStock.TabIndex = 11;
             buttonAddToStock.Text = "Adaugă";
             buttonAddToStock.UseVisualStyleBackColor = true;
@@ -55,31 +56,28 @@ namespace Interface
             groupBoxUpdateStock.Controls.Add(labelQuantity);
             groupBoxUpdateStock.Controls.Add(labelBarcode);
             groupBoxUpdateStock.Controls.Add(textBoxBarcode);
-            groupBoxUpdateStock.Location = new Point(32, 28);
-            groupBoxUpdateStock.Margin = new Padding(3, 2, 3, 2);
+            groupBoxUpdateStock.Location = new Point(37, 37);
             groupBoxUpdateStock.Name = "groupBoxUpdateStock";
-            groupBoxUpdateStock.Padding = new Padding(3, 2, 3, 2);
-            groupBoxUpdateStock.Size = new Size(633, 336);
+            groupBoxUpdateStock.Size = new Size(723, 448);
             groupBoxUpdateStock.TabIndex = 13;
             groupBoxUpdateStock.TabStop = false;
             groupBoxUpdateStock.Text = "ADAUGĂ LA STOC-UL DE PIESE";
             // 
             // numericUpDownQuantity
             // 
-            numericUpDownQuantity.Location = new Point(251, 186);
-            numericUpDownQuantity.Margin = new Padding(3, 2, 3, 2);
+            numericUpDownQuantity.Location = new Point(287, 248);
             numericUpDownQuantity.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             numericUpDownQuantity.Name = "numericUpDownQuantity";
-            numericUpDownQuantity.Size = new Size(218, 23);
+            numericUpDownQuantity.Size = new Size(249, 27);
             numericUpDownQuantity.TabIndex = 16;
             // 
             // labelQuantity
             // 
             labelQuantity.AutoSize = true;
             labelQuantity.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelQuantity.Location = new Point(164, 184);
+            labelQuantity.Location = new Point(187, 245);
             labelQuantity.Name = "labelQuantity";
-            labelQuantity.Size = new Size(66, 19);
+            labelQuantity.Size = new Size(86, 22);
             labelQuantity.TabIndex = 15;
             labelQuantity.Text = "Cantitate:";
             // 
@@ -87,26 +85,29 @@ namespace Interface
             // 
             labelBarcode.AutoSize = true;
             labelBarcode.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelBarcode.Location = new Point(141, 129);
+            labelBarcode.Location = new Point(161, 172);
             labelBarcode.Name = "labelBarcode";
-            labelBarcode.Size = new Size(89, 19);
+            labelBarcode.Size = new Size(113, 22);
             labelBarcode.TabIndex = 14;
             labelBarcode.Text = "Cod de bare:";
             // 
             // textBoxBarcode
             // 
-            textBoxBarcode.Location = new Point(251, 129);
+            textBoxBarcode.Location = new Point(287, 172);
+            textBoxBarcode.Margin = new Padding(3, 4, 3, 4);
             textBoxBarcode.Name = "textBoxBarcode";
-            textBoxBarcode.Size = new Size(218, 23);
+            textBoxBarcode.Size = new Size(249, 27);
             textBoxBarcode.TabIndex = 13;
             // 
             // FormAddToStock
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 422);
+            BackColor = Color.FromArgb(40, 43, 48);
+            ClientSize = new Size(800, 563);
             Controls.Add(groupBoxUpdateStock);
             Controls.Add(buttonAddToStock);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormAddToStock";
             Text = "Adaugă în stoc:";
             groupBoxUpdateStock.ResumeLayout(false);
