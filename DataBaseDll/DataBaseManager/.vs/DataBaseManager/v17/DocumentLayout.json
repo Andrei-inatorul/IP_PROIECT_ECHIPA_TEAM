@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\DataBaseDll\\DataBaseManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49D922BB-AC71-416A-9ADA-B2B9F5EE135C}|DataBaseManager\\DataBaseManager.csproj|d:\\an3\\sem2\\ip\\proiect\\ipproject\\ipproject-refactor\\databasedll\\databasemanager\\databasemanager\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D922BB-AC71-416A-9ADA-B2B9F5EE135C}|DataBaseManager\\DataBaseManager.csproj|solutionrelative:databasemanager\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataBaseManager.cs",
+              "DocumentMoniker": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\DataBaseDll\\DataBaseManager\\DataBaseManager\\DataBaseManager.cs",
+              "RelativeDocumentMoniker": "DataBaseManager\\DataBaseManager.cs",
+              "ToolTip": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\DataBaseDll\\DataBaseManager\\DataBaseManager\\DataBaseManager.cs",
+              "RelativeToolTip": "DataBaseManager\\DataBaseManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:32:18.085Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

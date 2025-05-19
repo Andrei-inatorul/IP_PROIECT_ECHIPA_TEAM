@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|d:\\an3\\sem2\\ip\\proiect\\ipproject\\ipproject-refactor\\autopartsmanagementdll\\autopartsmanagementdll\\autopartsmanagementdll\\realactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|solutionrelative:autopartsmanagementdll\\realactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|d:\\an3\\sem2\\ip\\proiect\\ipproject\\ipproject-refactor\\autopartsmanagementdll\\autopartsmanagementdll\\autopartsmanagementdll\\proxyactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|solutionrelative:autopartsmanagementdll\\proxyactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|d:\\an3\\sem2\\ip\\proiect\\ipproject\\ipproject-refactor\\autopartsmanagementdll\\autopartsmanagementdll\\autopartsmanagementdll\\iactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8565D0-F261-4322-863E-CE53780739A2}|AutoPartsManagementDLL\\AutoPartsManagementDLL.csproj|solutionrelative:autopartsmanagementdll\\iactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RealActionManager.cs",
+              "DocumentMoniker": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\RealActionManager.cs",
+              "RelativeDocumentMoniker": "AutoPartsManagementDLL\\RealActionManager.cs",
+              "ToolTip": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\RealActionManager.cs",
+              "RelativeToolTip": "AutoPartsManagementDLL\\RealActionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:15:06.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProxyActionManager.cs",
+              "DocumentMoniker": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\ProxyActionManager.cs",
+              "RelativeDocumentMoniker": "AutoPartsManagementDLL\\ProxyActionManager.cs",
+              "ToolTip": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\ProxyActionManager.cs",
+              "RelativeToolTip": "AutoPartsManagementDLL\\ProxyActionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:14:38.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IActionManager.cs",
+              "DocumentMoniker": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\IActionManager.cs",
+              "RelativeDocumentMoniker": "AutoPartsManagementDLL\\IActionManager.cs",
+              "ToolTip": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\AutoPartsManagementDLL\\IActionManager.cs",
+              "RelativeToolTip": "AutoPartsManagementDLL\\IActionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:12:52.241Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NMUTnRxuP+I=",
+  "success": true,
+  "projectFilePath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\DataBaseDll\\DataBaseManager\\DataBaseManager\\DataBaseManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pitic\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\Pitic\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}
