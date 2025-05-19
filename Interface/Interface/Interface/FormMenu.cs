@@ -22,6 +22,9 @@ namespace Interface
             InitializeButtons();
         }
 
+
+
+
         private void InitializeButtons()
         {
             Permissions permissions = new Permissions();
@@ -119,6 +122,13 @@ namespace Interface
                 dataGridViewDBInfo.Columns.Add("Category", "Brand");
                 dataGridViewDBInfo.Columns.Add("Price", "Price");
                 dataGridViewDBInfo.Columns.Add("Stock", "Stock");
+                DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+                imgColumn.Name = "Poza";
+                imgColumn.HeaderText = "Imagine";
+                imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                imgColumn.Width = 100;
+
+                dataGridViewDBInfo.Columns.Add(imgColumn);
             }
         }
 
@@ -126,10 +136,10 @@ namespace Interface
         {
             List<AutoPart> parts = _util.GetParts();
             dataGridViewDBInfo.Rows.Clear();
-
+            Image img = Image.FromFile(Path.Combine(Application.StartupPath, "images", "default.jpg"));
             foreach (AutoPart p in parts)
             {
-                dataGridViewDBInfo.Rows.Add(p.Id.ToString(), p.Name, p.Brand, p.Price.ToString(), p.Stock.ToString());
+                dataGridViewDBInfo.Rows.Add(p.Id.ToString(), p.Name, p.Brand, p.Price.ToString(), p.Stock.ToString(),img);
             }
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UzkRv5t/AMI=",
+  "dgSpecHash": "LwZ6q+7WK68=",
   "success": true,
-  "projectFilePath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\Interface\\Interface\\Interface\\Interface.csproj",
+  "projectFilePath": "D:\\an3\\SEM2\\IP\\PROIECT\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pitic\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
     "C:\\Users\\Pitic\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"

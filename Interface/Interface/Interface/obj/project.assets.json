@@ -87,11 +87,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\Interface\\Interface\\Interface\\Interface.csproj",
+      "projectUniqueName": "D:\\an3\\SEM2\\IP\\PROIECT\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\Interface.csproj",
       "projectName": "Interface",
-      "projectPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\Interface\\Interface\\Interface\\Interface.csproj",
+      "projectPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\Interface.csproj",
       "packagesPath": "C:\\Users\\Pitic\\.nuget\\packages\\",
-      "outputPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IpProject\\IpProject-Refactor\\Interface\\Interface\\Interface\\obj\\",
+      "outputPath": "D:\\an3\\SEM2\\IP\\PROIECT\\IP_PROIECT_ECHIPA_TEAM\\Interface\\Interface\\Interface\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
